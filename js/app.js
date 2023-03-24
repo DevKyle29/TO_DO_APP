@@ -1,3 +1,4 @@
+// Using the DOM manipulation techniques to get the required elements:
 const taskInput = document.querySelector(".task-input input"),
 filters = document.querySelectorAll(".filters span"),
 clearAll = document.querySelector(".clear-btn"),
