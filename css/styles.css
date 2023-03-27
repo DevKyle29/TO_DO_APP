@@ -15,6 +15,7 @@ body{
     background: linear-gradient(135deg, #4AB1FF, red );
 }
 
+/*changing the selected text and not the background*/
 ::selection{
     color: #FFF;
     background: #3C87FF;
@@ -41,6 +42,7 @@ body{
     transform: translate(17px, -50%);
   }
 
+/*targetting the input box*/
 .task-input input{
     height: 100%;
     outline: none;
@@ -50,17 +52,19 @@ body{
     border: 1px solid #999;
 }
 
+/*targetting the input box when the user clicks on it highlights it*/
 .task-input input:focus,
 .task-input input.active{
     padding-left: 52px;
     border: 2px solid #3C87FF;
 }
 
-
+/*changing the color of the placeholder text*/
 .task-input input::placeholder{
     color: #BFBFBF
 }
 
+/*targetting the controls and the list items*/
 .controls, li{
     display: flex;
     align-items: center;
@@ -79,6 +83,7 @@ body{
     cursor: pointer;
 }
 
+/*targeting the 1st span*/
 .filters span:first-child{
     margin-left: 0;
 }
@@ -122,10 +127,12 @@ body{
     max-height: 300px;
 }
 
+/*adding with to the scrollbar*/
 .task-box::-webkit-scrollbar{
     width: 5px;
 }
 
+/*targetting the track progress*/
 .task-box::-webkit-scrollbar-track{
     background: #F1F1F1;
     border-radius: 25px;
